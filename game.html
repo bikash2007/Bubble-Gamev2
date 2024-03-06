@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouble game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+      
+        <div id="pannel">
+             <div id="ptop">
+                     <div  class="elm">
+                            <h2>Hit</h2>
+                            <div class="box" >
+                                <h1 id="hitval">0</h1>
+                            </div>
+                     </div>
+                    <div  class="elm">
+                          <h2>Timer</h2>
+                            <div class="box">
+                                 <h1 id="timeval"></h1>
+                            </div>
+                    </div>
+                    <div  class="elm">
+                            <h2>score</h2>
+                              <div class="box" >
+                                <h1 id="scoreval">0</h1>
+                              </div>
+                    </div>
+
+                  <div id="sound"></div> 
+                  <div id="bgmusic">
+                      <!-- <audio src="sound/game-music-loop-15-153386.mp3" loop autoplay></audio> -->
+                      
+                  </div>
+             </div><!--ptop close-->
+
+             <div id="pbtm">
+             </div><!-- pbtm close-->
+        </div><!--pannel close-->
+        <div id="back">
+            <a href="index.html"><button onclick=" mp3()" class="btn">home page </button></a>
+            <a href="game.html"><button onclick=" sound()" class="btn">Play Again </button></a>
+        </div>
+    </div><!--main close-->
+        
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
