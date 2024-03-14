@@ -25,6 +25,7 @@ html,body{
     border: 2px solid rgba(27, 255, 2, 0.979);
     position: absolute;
     top: 40px;
+    animation: border 2s infinite 1s;
 
 }
 #ptop{
@@ -97,24 +98,24 @@ html,body{
     font-size: 20px;
     padding: 5px;
      margin: 30px 50px;
-    
+    transition: all 2s;
 
     text-align: center;
 }
 .btn:hover{
-    background-color: transparent;
-    border-bottom: 2px solid red;
-    transition-duration: 2s;
-    transition: inherit;
-    background-color: rgb(32, 100, 113);
-    color: white;
+    background-color: rgba(20, 218, 240, 0.199);
+    
     cursor: pointer;
+    transform: scale(1.1);
+    
+
+    
 }
 #banner{
     height: 100%;
     width: 100%;
     display: flex;
-    background:black;
+    background:rgb(0, 0, 0);
     flex-wrap: wrap;
     text-overflow: wrap;
      overflow: hidden;
@@ -122,6 +123,7 @@ html,body{
      text-align: center;
      align-items: center;
      background: rgba(9, 59, 62, 0.968);
+     z-index: 20;
 }
 #bg{
     width: 100%;
@@ -135,12 +137,12 @@ html,body{
 
 }
 #cont{
-    height: 570px;
+    height: 590px;
     width: 1400PX;
     z-index: 3;
     position: relative;
     top: 20px;
-    left: px;
+    left: 0px;
     border: 2px solid rgb(248, 3, 3);
     border-radius: 20px;
     
@@ -148,10 +150,16 @@ html,body{
     color: rgb(8, 195, 8);
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow: auto;
+    transform: scale(0.9);
+    transition: all 3s;
+    animation: border 2s infinite 1s;
     
     
 
+}
+#cont:hover{
+     width: 1800px;
 }
 #cont p{
    font-weight: 600;
@@ -159,9 +167,10 @@ html,body{
    color: rgb(43, 255, 0);
 }
 #cont h1{
-    color: rgb(14, 154, 169);
+    color: rgb(255, 0, 0);
     font-weight: 1800;
     font-size: 60px;
+    text-shadow: 2px 2px 5px rgb(204, 16, 16);
 }
 #cont h2{
     color: white;
@@ -186,10 +195,14 @@ html,body{
      height: 120px;
      border: 2px solid red;
      border-radius: 20px;
+     transition: all 5s;
 
 }
+#saringan:hover{
+    height: 150px;
+}
 #logo{
-    height: 200px;
+    height: 150px;
     
     top: 20px;
     left:20px;
@@ -197,6 +210,13 @@ html,body{
     z-index: 10;
     border: 4px double rgb(190, 3, 3);
     position: absolute;
+    animation-name: slide ;
+    animation-duration: 4s;
+    
+}
+#logo:hover
+ {
+       transform: scale(1.3);
 }
 #info{
     z-index: 10;
@@ -206,7 +226,7 @@ html,body{
     color: rgb(0, 51, 255);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 900;
-    
+
     
 }
 span{
@@ -228,5 +248,41 @@ margin: 10px 10px;
 margin-top: 10px;
  
 }
+strong{
+    color: rgb(255, 32, 32);
+    font-size: larger;
+    margin-left: 4px;
+    text-shadow: 2px 2px rgb(24, 18, 18);
+}
+#csr{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(225, 22, 22);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    transform: translate(-50% -50%);
+    animation-name: csr;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
 
 
+  @keyframes slide{
+    to{left: 20px;}
+    from{left: 190px;}
+  }
+  @keyframes border{
+    0%   {border-bottom: 2px solid blue;}
+    25%   {border-right: 2px solid rgb(25, 25, 169);}
+    50% {border-top: 2px solid rgb(0, 238, 255);}
+    75%  {border-left: 2px solid rgb(44, 172, 136);}
+    100% {border-bottom: 2px solid blue;}
+  }
+  @keyframes csr{
+    0%   {background-color: aqua;}
+    25%   {background-color: rgb(112, 249, 0);}
+    50% {background-color: rgb(0, 26, 255);}
+    75%  {background-color: rgb(255, 55, 0);}
+    100% {background-color: rgb(0, 255, 34);}
+  }

@@ -25,7 +25,7 @@ function runtimer(){
           clearInterval(timeint);
           
           document.querySelector("#sound").innerHTML=`<audio src="sound/medieval-fanfare-6826.mp3" loop autoplay ></audio>`
-           document.querySelector("#pbtm").innerHTML = `<h1>Game over <h1> <br> <h1> <span>Congratulatation <span> your final score is ${score}<h1>`
+           document.querySelector("#pbtm").innerHTML = `<h1>Game over <h1> <br> <h1> <strong>Congratulatation </strong> your final score is<strong> ${score}</strong><h1>`
 
 
         }   
