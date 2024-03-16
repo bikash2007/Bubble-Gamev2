@@ -1,3 +1,12 @@
+ @font-face {
+    font-family: "varsity";
+    src: url(assets/varsity_regular.ttf);
+ }
+ @font-face{
+    font-family: "p";
+    src: url(assets/Whocats.ttf);
+ }
+ 
  *{
     padding: 0px;
     margin: 0px;
@@ -115,15 +124,16 @@ html,body{
     height: 100%;
     width: 100%;
     display: flex;
-    background:rgb(0, 0, 0);
+   
     flex-wrap: wrap;
     text-overflow: wrap;
      overflow: hidden;
      justify-content: center;
      text-align: center;
      align-items: center;
-     background: rgba(9, 59, 62, 0.968);
-     z-index: 20;
+     background: url(IMG/BULDING.png);
+     background-size: cover;
+     z-index: 100;
 }
 #bg{
     width: 100%;
@@ -163,14 +173,16 @@ html,body{
 }
 #cont p{
    font-weight: 600;
+   
    font-size: 20px;
-   color: rgb(43, 255, 0);
+   /* color: rgb(43, 255, 0); */
 }
 #cont h1{
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     font-weight: 1800;
     font-size: 60px;
-    text-shadow: 2px 2px 5px rgb(204, 16, 16);
+     text-shadow: 2px 2px 5px rgb(204, 16, 16); 
+    font-family:"varsity" ;
 }
 #cont h2{
     color: white;
@@ -249,9 +261,13 @@ margin-top: 10px;
  
 }
 strong{
-    color: rgb(255, 32, 32);
+    color: rgb(215, 16, 16);
     font-size: larger;
     margin-left: 4px;
+    font-family: "p";
+    font-stretch: semi-expanded;
+    gap: 20px;
+    
     text-shadow: 2px 2px rgb(24, 18, 18);
 }
 #csr{
