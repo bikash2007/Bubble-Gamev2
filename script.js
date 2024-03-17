@@ -1,4 +1,4 @@
-var timer = 3
+var timer = 60
  var hit = " ";
 var score = 0
 

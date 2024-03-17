@@ -74,18 +74,20 @@ html,body{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(14, 53, 56);
-    /* column-gap: 10px; */
-    /* gap: 10px; */
+     column-gap: 10px; 
+    gap: 10px; 
     justify-content: center;
     align-items: center;
     border: 2PX solid red;
     position: relative;
     left: -11px;
+    padding-right: 114px;
+   
 }
 #pbtm,h1{
      color: rgb(0, 238, 255);
     
-     line-height: 5vh;
+     line-height: 9vh;
      margin-left: 10px;
 }
 #bubble{
@@ -339,7 +341,7 @@ strong{
            #pbtm ,h1{
             
           
-             font-size: 20px;
+             font-size: 27px;
 
            }
            #pbt{
