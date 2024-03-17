@@ -35,6 +35,8 @@ html,body{
     position: absolute;
     top: 40px;
     animation: border 2s infinite 1s;
+    justify-content: center;
+    align-items: center;
 
 }
 #ptop{
@@ -72,16 +74,18 @@ html,body{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(14, 53, 56);
-    column-gap: 10px;
-    gap: 10px;
+    /* column-gap: 10px; */
+    /* gap: 10px; */
     justify-content: center;
     align-items: center;
     border: 2PX solid red;
+    position: relative;
+    left: -11px;
 }
 #pbtm,h1{
      color: rgb(0, 238, 255);
-     padding: 2px 2px;
-     line-height: 9vh;
+    
+     line-height: 5vh;
      margin-left: 10px;
 }
 #bubble{
@@ -318,13 +322,32 @@ strong{
                position: relative;
            }
            .box{
-                height: 40px;
-                width: 50px;
+                height: 30px;
+                width: 40px;
                 font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
            }
            #csr{
             display: none;
            }
+           #ptop{
+              font-size: 10px;
+           }
+           #pbtm ,h1{
+            
+          
+             font-size: 20px;
 
+           }
+           #pbt{
+            display: flex;
+            padding: 10px 10px;
+            align-items: center;
+           }
+     #back{
+          display: flex;
+     }
   }
