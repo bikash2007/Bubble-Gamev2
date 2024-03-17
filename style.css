@@ -60,7 +60,10 @@ html,body{
      font-size: 15px;
      height: 40px;
      width: 70px;  
-     border: 2PX solid red;  
+     border: 2PX solid red; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 #pbtm{
     height: calc(100% - 80px);
@@ -74,6 +77,12 @@ html,body{
     justify-content: center;
     align-items: center;
     border: 2PX solid red;
+}
+#pbtm,h1{
+     color: rgb(0, 238, 255);
+     padding: 2px 2px;
+     line-height: 9vh;
+     margin-left: 10px;
 }
 #bubble{
     text-align: center;
@@ -249,11 +258,13 @@ span{
     font-size: 23px;
 }
 #media{
-    position: absolute;
+    position: relative;
     bottom: 10px;
     right: 10px;
     /* border: 2px solid red; */
     border-radius: 10px;
+      align-items: center;
+     
 }
 .fb{
 margin: 10px 10px;
@@ -267,7 +278,7 @@ strong{
     font-family: "p";
     font-stretch: semi-expanded;
     gap: 20px;
-    
+    letter-spacing: 2px;
     text-shadow: 2px 2px rgb(24, 18, 18);
 }
 #csr{
@@ -301,4 +312,19 @@ strong{
     50% {background-color: rgb(0, 26, 255);}
     75%  {background-color: rgb(255, 55, 0);}
     100% {background-color: rgb(0, 255, 34);}
+  }
+  @media (max-width:600px){
+           #logo{
+               position: relative;
+           }
+           .box{
+                height: 40px;
+                width: 50px;
+                font-size: 14px;
+
+           }
+           #csr{
+            display: none;
+           }
+
   }
